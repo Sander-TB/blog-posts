@@ -33,7 +33,7 @@ Using the tilde symbol takes you all the way back to your home directory (On uni
 
 If you need to move into a directory which name contains a space, use “\\” before you type any spaces.
 
-Otherwise, you can just press tab to cycle trough all your directories untill you find the one you need, then press enter.
+Otherwise, you can just press tab to cycle trough all your directories until you find the one you need, then press enter.
 
 <br>
 
@@ -76,6 +76,18 @@ This moves the entire directory (in this case, with the name “old directory”
 Using touch, you can create a new file straight from the command line; any filetype you need. You simply add .html, or any other file extension to get the desired filetype.
 
 It is worth mentioning that (at least on mac, not sure about other OSs) if you don't specify which filetype you want to create, the terminal automatically assumes that you meant to create a .txt file.
+
+<br>
+
+    rm filename
+
+rm removes a file from your working directory
+
+    rm -r folder-name
+
+To delete an entire folder, you need to use the -r flag. This removes the parent directory and all its sub directories. Sometimes you need/want to force remove something; then you need the -rf flag.
+
+    rm -rf folder-name
 
 <br>
 
