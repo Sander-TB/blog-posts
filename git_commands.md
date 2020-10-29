@@ -1,3 +1,8 @@
+---
+title: "Git commands for the terminal"
+date: "2020-10-29"
+---
+
 # Git commands for the terminal
 
 Working with version control systems is crucial if you're a team working on the same software development project. Furthermore, it is also useful when working by yourself.
