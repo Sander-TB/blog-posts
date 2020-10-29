@@ -8,7 +8,9 @@ To do this, you first need to know some different commands; what they do and wha
 
 ## Make Directory
 
+```bash
     mkdir new-project
+```
 
 Makes a new folder for you to store all your files for a new project.
 
@@ -16,16 +18,22 @@ Makes a new folder for you to store all your files for a new project.
 
 ## Change Directory
 
+```bash
     cd workspace
+```
 
 Cd stands for change directory. You use this to move from one folder to another, from project to project. After typing “cd”, you only need to type a few of the first letters of your directory name and then press tab, and the terminal will autofill the rest for you.
 
+```bash
     cd ..
+```
 
 Using two dots after cd makes you move back one directory. Of course, you can do this as many times as you need to get back to where you need to be.
 
+```bash
     cd ~
     cd
+```
 
 Using the tilde symbol takes you all the way back to your home directory (On unix based systems such as Linux and Mac OS). However only writing cd, with no symbols or characters after, also takes you to your home directory.
 
@@ -39,21 +47,27 @@ Otherwise, you can just press tab to cycle trough all your directories until you
 
 ## List and Print
 
+```bash
     ls
+```
 
 When you have arrived in the directory you wish to work in, you can type ls to list all the contents of that directory. If you want more details about the contents you can use this command:
 
+```bash
     ls -la
+```
 
 This shows you when the files where last updated.
 
 <br>
-
+``` bash
     pwd
-
+```
 Pwd, print working directory, shows you where you are. Using it might show you something like this:
 
+```bash
     Users/sander/workspace/my-project
+```
 
 This way, you know where you need to move, if need be.
 
@@ -63,7 +77,9 @@ This way, you know where you need to move, if need be.
 
 You can move an entire directory into another with this command. Maybe you've accidentally created a new folder outside where it needs to be. To move it inside, simply use this command:
 
+```bash
     mv old-directory new-directory
+```
 
 This moves the entire directory (in this case, with the name “old directory”) into the new one/ the one you need.
 
@@ -71,7 +87,9 @@ This moves the entire directory (in this case, with the name “old directory”
 
 ## Create and delete
 
+```bash
     touch new-file-name
+```
 
 Using touch, you can create a new file straight from the command line; any filetype you need. You simply add .html, or any other file extension to get the desired filetype.
 
@@ -79,21 +97,29 @@ It is worth mentioning that (at least on mac, not sure about other OSs) if you d
 
 <br>
 
+```bash
     rm filename
+```
 
 rm removes a file from your working directory
 
+```bash
     rm -r folder-name
+```
 
 To delete an entire folder, you need to use the -r flag. This removes the parent directory and all its sub directories. Sometimes you need/want to force remove something; then you need the -rf flag.
 
+```bash
     rm -rf folder-name
+```
 
 <br>
 
 ## Open in Visual Code
 
+```bash
     code .
+```
 
 Lastly, if you have the extension for visual studio code, an easy way to open a directory to your VScode workspace is to make your way into where you need to be, and then use the command above. This opens up your folder, and you can start coding immediately.
 I highly suggest to install this extension.
