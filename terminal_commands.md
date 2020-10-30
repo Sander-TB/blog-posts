@@ -3,8 +3,6 @@ title: "Basic Terminal commands and what they mean"
 date: "2020-10-29"
 ---
 
-# Basic Terminal commands and what they mean
-
 One of best way for a software developer to boost their productivity is to know how to make your workflow as efficient as possible. Therefore, it is good practice to get to know your terminal, how to move around your computer with smoothness and ease.
 
 To do this, you first need to know some different commands; what they do and what they mean. Further down the page i have jotted down some of the ones I think is most useful to know about, to begin your quest as a terminal power user.
