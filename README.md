@@ -12,5 +12,6 @@ title: ""
 author: ""
 date: ""
 blurb: ""
+tags: "", "", ""
 
 ---
