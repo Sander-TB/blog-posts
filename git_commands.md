@@ -1,13 +1,14 @@
 ---
 title: "Git commands for the terminal"
+author: "Sander Trollebø Byrkjeland"
 date: "2020-10-29"
+blurb: "Some Git commands for the terminal to make your workflow faster and more efficient"
+tags: "coding", "programming", "web development"
 ---
 
 Working with version control systems is crucial if you're a team working on the same software development project. Furthermore, it is also useful when working by yourself.
 
 I wont go into detail about why communities such as Github is useful, however I want to show off some of the most useful terminal commands for git that can really enhance your workflow and make you more efficient as a software developer.
-
-<br>
 
 ## Git init
 
@@ -16,8 +17,6 @@ I wont go into detail about why communities such as Github is useful, however I 
 ```
 
 Git init intializes version control in your directory. This is the first thing you need to do to push your project to, for example Github.
-
-<br>
 
 ## Git status
 
@@ -29,8 +28,6 @@ Git status shows all the changes you have made in your project, listed either in
 If its red, it means they are not yet ready to be pushed to github. You will need to add your change first.
 
 If its green, you can go ahead and push it to yo repository.
-
-<br>
 
 ## Git add
 
@@ -46,8 +43,6 @@ Using the git add command, you add a change you have made in your working direct
 
 If you, instead of specifying the filename, add a "." you add all the changes, in all documents in your working directory.
 
-<br>
-
 ## Git commit
 
 ```bash
@@ -55,8 +50,6 @@ If you, instead of specifying the filename, add a "." you add all the changes, i
 ```
 
 This is what you write to make all the changes ready to be committed to your repo. The -m flag lets you write a short message, describing what sort of change you have made in this particular commit.
-
-<br>
 
 ## Git push
 
@@ -81,8 +74,6 @@ To pull down changes made by other people working on your project, you use git p
 ```
 
 To clone a remote repository from communities such as github, you use the git clone command. As the name suggests, this clones the whole repository, so that you can make changes to it, without messing up or removing anything that is already there.
-
-<br>
 
 ## Git branch
 

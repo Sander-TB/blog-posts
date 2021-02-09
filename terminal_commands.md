@@ -1,113 +1,92 @@
 ---
 title: "Git commands for the terminal"
+author: "Sander Trollebø Byrkjeland"
 date: "2020-10-29"
+blurb: "Some beginner commands for the terminal to make your workflow faster and more efficient"
+tags: "coding", "programming", "web development"
+---
+# Basic Terminal commands and what they mean
+
+One of best way for a software developer to boost their productivity is to know how to make your workflow as efficient as possible. Therefore, it is good practice to get to know your terminal, how to move around your computer with smoothness and ease.
+
+To do this, you first need to know some different commands; what they do and what they mean. Further down the page i have jotted down some of the ones I think is most useful to know about, to begin your quest as a terminal power user.
+
+## Make Directory
+
+```bash
+    mkdir new-project
+```
+Makes a new folder for you to store all your files for a new project.
+
+## Change Directory
+
+```bash
+    cd new-project
+```
+Cd stands for change directory. You use this to move from one folder to another, from project to project. After typing “cd”, you only need to type a few of the first letters of your directory name and then press tab, and the terminal will autofill the rest for you.
+
+```bash
+    cd ..
+```
+Using two dots after cd makes you move back one directory. Of course, you can do this as many times as you need to get back to where you need to be.
+
+```bash
+    cd ~
+```
+Using the tilde symbol takes you all the way back to your home directory (On unix based systems such as Linux and Mac OS)
+
+Otherwise, you can just press tab to cycle trough all your directories until you find the one you need, then press enter.
+
+## List and Print
+
+```bash
+    ls
+```
+When you have arrived in the directory you wish to work in, you can type ls to list all the contents of that directory. If you want more details about the contents you can use this command:
+
+```bash
+    ls -la
+```
 ---
 
-Working with version control systems is crucial if you're a team working on the same software development project. Furthermore, it is also useful when working by yourself.
-
-I wont go into detail about why communities such as Github is useful, however I want to show off some of the most useful terminal commands for git that can really enhance your workflow and make you more efficient as a software developer.
-
-<br>
-
-## Git init
-
-```
-    git init
+```bash
+pwd
 ```
 
-Git init intializes version control in your directory. This is the first thing you need to do to push your project to, for example Github.
-
-<br>
-
-## Git status
+pwd, print working directory, shows you where you are. Using it might show you something like this:
 
 ```bash
-    git status
+Users/sander/workspace/my-project
 ```
+This way, you know where you need to move, if need be.
 
-Git status shows all the changes you have made in your project, listed either in red or in green.
-If its red, it means they are not yet ready to be pushed to github. You will need to add your change first.
 
-If its green, you can go ahead and push it to yo repository.
+## Move
 
-<br>
-
-## Git add
+You can move an entire directory into another with this command. Maybe you've accidentally created a new folder outside where it needs to be. To move it inside, simply use this command:
 
 ```bash
-    git add filename
+mv old-directory new-directory
 ```
+This moves the entire directory (in this case, with the name “old directory”) into the new one/the one you need.
 
-Using the git add command, you add a change you have made in your working directory.
+## Create
 
 ```bash
-    git add .
+touch new-file-name
 ```
 
-If you, instead of specifying the filename, add a "." you add all the changes, in all documents in your working directory.
+Using touch, you can create a new file straight from the command line; any filetype you need. You simply add .html, or any other file extension to get the desired filetype.
 
-<br>
+It is worth mentioning that (at least on mac, not sure about other OSs) if you don't specify which filetype you want to create, the terminal automatically assumes that you meant to create a .txt file.
 
-## Git commit
+## Open in Visual Code
 
 ```bash
-    git commit -m "description"
+code .
 ```
 
-This is what you write to make all the changes ready to be committed to your repo. The -m flag lets you write a short message, describing what sort of change you have made in this particular commit.
+Lastly, if you have the extension for visual studio code, an easy way to open a directory to your VScode workspace is to make your way into where you need to be, and then use the command above. This opens up your folder, and you can start coding immediately.
+I highly suggest to install this extension.
 
-<br>
-
-## Git push
-
-```bash
-    git push
-```
-
-Git push pushes your latest commit to your repository, which might be located remotely, for example on Github.
-
-<br>
-
-## Git pull
-
-```bash
-    git pull
-```
-
-To pull down changes made by other people working on your project, you use git pull. This ensures you are working on the latest iteration of your project, and makes it easy to fix anything, if multiple changes are made to the same lines of code.
-
-<br>
-
-## Git clone
-
-```bash
-    git clone https://github.com/user/the-name-of-your-remote-repo.git
-```
-
-To clone a remote repository from communities such as github, you use the git clone command. As the name suggests, this clones the whole repository, so that you can make changes to it, without messing up or removing anything that is already there.
-
-<br>
-
-## Git branch
-
-```bash
-    git branch name-of-branch
-```
-
-This changes your working branch from master, to the one you want to work on.
-
-```bash
-    git branch -d name-of-branch
-```
-
-The -d flag lets you delete the branch if you no longer need it.
-
-<br>
-
-## Stopping git initiation
-
-```bash
-    rm -rf .git
-```
-
-This removes the hidden .git folder from your project, and you no longer have access to any of the git commands.
+That's all folks! See you in my next post :)
