@@ -89,6 +89,16 @@ newFood = {
 
 ## Tuple
 
+A tuple allow you to define an array with a fixed number of known elements, but does not necessarily have the same types. For example, maybe you need to define an array containing both a string and a number. You can define it like this:
+
+```typescript
+let a: [string, number];
+a = ["Hello", 69]; // Ok and correct
+a = [69, "Nice"]; // Error
+```
+
+The types must be initialized in the order you defined them. If not they will produce and error.
+
 ## Enum
 
 ## Unknown
